@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Senior QA Automation Engineer | 13 Years of Experience",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "eval:ai": "npx --yes promptfoo@latest eval -c 03-AI-LLM-Testing-Python\\promptfoo-testing\\promptfooconfig.yaml --no-cache"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Swetha8-alt/ai-testing-portfolio-S.git"
