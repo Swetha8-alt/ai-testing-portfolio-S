@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "Acme Airline Baggage Policy Evaluation"
+
+prompts:
+  - |
+    You are the help desk for Acme Air. Answer using only the policy below.
+    If the policy does not answer the question, say that the policy does not specify.
+
+    Policy:
+    {{policy}}
+
+    Question: {{question}}
+
+providers:
+  - "ollama:chat:llama3.2:latest"
+  
+
+tests:
+  - vars:
+      question: "How many carry-on bags can I bring?"
+      policy: "file://policy.txt"
+    assert:
+      - type: icontains
+        value: "one carry-on"
+      - type: llm-rubric
+        value: "Only states rules found in the policy. Invents no fees."
+        provider: "ollama:chat:llama3.2:latest"
+
+  - vars:
+      question: "What is the fee for an extra bag?"
+      policy: "file://policy.txt"
+    assert:
+      - type: icontains
+        value: "₹500 per additional kg"
+      - type: llm-rubric
+        value: "States that extra baggage costs ₹500 per additional kg, matching the policy, and does not invent any other fees."
+        provider: "ollama:chat:llama3.2:latest"
+
+  - vars:
+      question: "What is the cabin baggage allowance?"
+      policy: "file://policy.txt"
+    assert:
+      - type: icontains
+        value: "7 kg"
+      - type: llm-rubric
+        value: "States that the cabin baggage allowance is 7 kg and does not confuse it with check-in baggage limits."
+        provider: "ollama:chat:llama3.2:latest"
+       

@@ -1,0 +1,11 @@
+Policy item	Allowed limit
+Domestic check-in baggage	15 kg
+International check-in baggage	23 kg
+Cabin baggage	7 kg
+one carry-on	1 small laptop bag
+Extra baggage	₹500 per additional kg
+Overweight baggage	Charges apply
+Dangerous goods	Not permitted
+Lithium batteries	Spare batteries must be carried in cabin baggage
+Sports equipment	Subject to additional charges
+Lost baggage	Report at airport baggage desk
