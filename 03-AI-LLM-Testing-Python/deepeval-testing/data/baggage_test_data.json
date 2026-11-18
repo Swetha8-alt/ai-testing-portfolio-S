@@ -1,0 +1,32 @@
+[
+  {
+    "id": "TC001",
+    "question": "What is the domestic check-in baggage allowance?",
+    "expected_answer": "The domestic check-in baggage allowance is 15 kg.",
+    "category": "Baggage Allowance",
+    "required_fact_groups": [["15 kg"]]
+  },
+  {
+    "id": "TC002",
+    "question": "What is the cabin baggage allowance?",
+    "expected_answer": "The cabin baggage allowance is 7 kg.",
+    "category": "Baggage Allowance",
+    "required_fact_groups": [["7 kg"]]
+  },
+  {
+    "id": "TC003",
+    "question": "What is the excess baggage charge?",
+    "expected_answer": "The excess baggage charge is Rs. 500 per additional kg.",
+    "category": "Excess Baggage",
+    "required_fact_groups": [["500"], ["per kg", "per additional kg", "per extra kg"]]
+  },
+  {
+    "id": "TC004",
+    "question": "Can I carry spare lithium batteries in checked baggage?",
+    "expected_answer": "No. Spare lithium batteries cannot be carried in checked baggage.",
+    "category": "Restricted Items",
+    "required_fact_groups": [
+      ["not permitted in checked baggage", "not allowed in checked baggage", "cannot be carried in checked baggage", "cannot be taken in checked baggage", "cabin baggage only", "only in cabin baggage", "allowed in cabin baggage only", "allowed only in cabin baggage"]
+    ]
+  }
+]

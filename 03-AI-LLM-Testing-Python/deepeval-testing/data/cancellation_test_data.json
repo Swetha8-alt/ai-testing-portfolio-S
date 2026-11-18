@@ -1,0 +1,27 @@
+[
+  {
+    "id": "TC001",
+    "question": "Can I cancel my flight ticket?",
+    "expected_answer": "Yes, passengers can cancel their flight tickets."
+  },
+  {
+    "id": "TC002",
+    "question": "What is the cancellation fee?",
+    "expected_answer": "The cancellation fee is Rs. 1000."
+  },
+  {
+    "id": "TC003",
+    "question": "How long does the refund take?",
+    "expected_answer": "Refunds are processed within 7 working days."
+  },
+  {
+    "id": "TC004",
+    "question": "Can I get a full refund for a non-refundable ticket?",
+    "expected_answer": "No, non-refundable tickets are not eligible for a full refund."
+  },
+  {
+    "id": "TC005",
+    "question": "Can I change the passenger name?",
+    "expected_answer": "The available airline policy does not provide this information."
+  }
+]
